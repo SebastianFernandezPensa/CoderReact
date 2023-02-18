@@ -1,7 +1,7 @@
 import Contacto from "./components/Contacto";
 import Destacado from "./components/Destacado";
-import Footer from "./components/Footer";
 import ItemListContainer from "./components/ItemListContainer";
+import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 
 
@@ -11,7 +11,7 @@ function App() {
     <div>
       <NavBar/>
       <Destacado/>
-      <ItemListContainer mensaje={"ItemList"}/>
+      <ItemListContainer/>
       <Contacto/>
       <Footer/>
     </div>
