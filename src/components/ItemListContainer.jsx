@@ -1,19 +1,23 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 import ItemCount from "./ItemCount";
 import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
+
     const [items, setItems] = useState([]);
+    const {id} = useParams ();
 
     useEffect(
         ()=> {
-            fetch('https://api.mercadolibre.com/sites/MLA/search?q=wheyprotein%20&limit=24')
+            let texto_busqueda = id ? id : "wheyprotein,creatina";
+            fetch('https://api.mercadolibre.com/sites/MLA/search?q='+ texto_busqueda + '&limit=42')
             .then((respuesta) => respuesta.json())
             .then ((data) => {
                 setItems(data.results);
             })
-        },[]);
+        },[id]);
 
 
 
