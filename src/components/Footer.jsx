@@ -1,36 +1,50 @@
-
-import facebook from "./img/facebook.svg"
-import instagram from "./img/instagram.svg"
-import whatsapp from "./img/whatsapp.svg"
+import facebook from "./images/facebook.svg";
+import twitter from "./images/twitter.svg";
+import instagram from "./images/instagram.svg";
+import youtube from "./images/youtube.svg";
+import appStore from "./images/app_store_3x_d293084ca1.png";
+import playStore from "./images/disponible_google_play_3x_c977cae3bc.png";
+import logo from "./images/logoAdn.png";
 
 const Footer = () => {
-    return(
-        <div className="contaienr my-5">
+    return (
+        <div className="container my-5">
             <div className="row">
                 <div className="col">
-                    <a className="ms-3" href={"/"}> <img src={facebook} alt={"facebook"} width={"18"} /></a>
-                    <a className="ms-3" href={"https://instagram.com/adnpalermo"}> <img src={instagram} alt={"instagram"} width={"18"} /></a>
-                    <a className="ms-3" href={"https://wa.me/5491131675253"}> <img src={whatsapp} alt={"whatsapp"} width={"18"} /></a>
+                    <a href={"https://www.facebook.com/McDonaldsArgentina/"} className="me-3"><img src={facebook} alt={"Facebook"} width={"24"} /></a>
+                    <a href={"https://twitter.com/mcdonalds_ar"} className="me-3"><img src={twitter} alt={"Twitter"} width={"24"} /></a>
+                    <a href={"https://www.instagram.com/mcdonalds_ar/"} className="me-3"><img src={instagram} alt={"Instagram"} width={"24"} /></a>
+                    <a href={"https://www.youtube.com/user/McDonaldsSur"}><img src={youtube} alt={"YouTube"} width={"24"} /></a>
+                </div>
+                <div className="col text-end">
+                    <a href={"https://apps.apple.com/ar/app/mcdonalds-app/id1114009187"} target={"_blank"} rel="noreferrer" className="me-3"><img src={appStore} alt={"AppStore"} width={"115"} /></a>
+                    <a href={"https://play.google.com/store/apps/details?id=com.mcdo.mcdonalds&hl=es_AR"} target={"_blank"} rel="noreferrer"><img src={playStore} alt={"PlayStore"} width={"129"} /></a>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div className="row">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href={"/"}>Politica de Privacidad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href={"/"}>Defensa del Consumidor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href={"/"}>Proteccion de datos personales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href={"/"}>Contacto</a>
-                    </li>
-                </ul>
+                <div className="col-md-8">
+                    <ul className="nav">
+                        <li className="nav-item">
+                            <a className="nav-link text-secondary" href={"/"}>Política de Privacidad</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link text-secondary" href={"/"}>Defensa del Consumidor</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link text-secondary" href={"/"}>Protección de datos personales</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link text-secondary" href={"/"}>Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="col-md-4 text-end text-secondary">
+                    <p><img src={logo} alt={"AdnNutrition"} width={"40"} /> © ADNNUTRITION 2023</p>
+                </div>
             </div>
         </div>
+
     )
 }
 
