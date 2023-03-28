@@ -19,13 +19,13 @@ const NavBar = () => {
                                         <NavLink className="nav-link" activeclassname={"active"} to={"/"}>Productos</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" activeclassname={"active"} to={"/category/proteina"}>Proteinas</NavLink>
+                                        <NavLink className="nav-link" activeclassname={"active"} to={"/categoria/proteina"}>Proteinas</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" activeclassname={"active"} to={"/category/creatina"}>Creatinas</NavLink>
+                                        <NavLink className="nav-link" activeclassname={"active"} to={"/categoria/creatina"}>Creatinas</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" activeclassname={"active"} to={"/category/aminoacidos"}>Aminoacidos</NavLink>
+                                        <NavLink className="nav-link" activeclassname={"active"} to={"/categoria/aminoacidos"}>Aminoacidos</NavLink>
                                     </li>
                                 </ul>
                             </div>
